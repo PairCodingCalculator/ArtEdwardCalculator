@@ -10,15 +10,18 @@
 <!--var num= Math.sqrt();-->
 <!--</script>-->
 <div id="calculator-container">
-    <form name="calculator">
+    <form class="+,-,/,*" name="calculator">
+
         <div>
-            <input type="text" name="answer">
-            <input type="text" name="answer">
+            <input id="left" type="text" name="answer">
+            <input id="middle" type="text" name="answer">
+            <input id="right" type="text" name="answer">
 
         </div>
         <br>
         <hr>
         <br>
+
 
         <input type="button" class="button" value="7" onclick="calculator.answer.value += '7'">
         <input type="button" class="button" value="8" onclick="calculator.answer.value += '8'">
