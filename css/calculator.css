@@ -3,6 +3,9 @@
     width: 300px;
     border: 2px solid black;
     border-radius: 4px;
+    background-color: red;
+    margin-top: 20%;
+    margin-left: 35%;
 }
 
 input[type=button] {
