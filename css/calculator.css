@@ -6,7 +6,7 @@
     background-color: red;
     margin-top: 200px;
     margin-left: 350px;
-    /*background-image:url("../img/dragon.png");*/
+    background-image:url("../img/galaxy.jpg");
 }
 
 input[type=button] {
@@ -15,7 +15,7 @@ input[type=button] {
     font-size: 40px;
     font-weight: 900;
     margin: 2%;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 input[type=text] {
@@ -28,6 +28,14 @@ input[type=text] {
 
 
 }
+
+#dblbutton {
+    width: 45%;
+    padding: 1px;
+
+
+}
+
 
 
 
