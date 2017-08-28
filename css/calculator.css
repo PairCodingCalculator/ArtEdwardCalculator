@@ -3,7 +3,6 @@
     width: 500px;
     border: 2px solid black;
     border-radius: 4px;
-    background-color: red;
     margin-top: 200px;
     margin-left: 350px;
     background-image:url("../img/galaxy.jpg");
@@ -34,6 +33,10 @@ input[type=text] {
     padding: 1px;
 
 
+}
+.button:hover {
+    background: #E0B612;
+    transform: rotate(5deg);
 }
 
 
