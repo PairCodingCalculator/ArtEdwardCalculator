@@ -1,11 +1,11 @@
 #calc-contain {
     position: relative;
-    width: 300px;
+    width: 500px;
     border: 2px solid black;
     border-radius: 4px;
     background-color: red;
-    margin-top: 20%;
-    margin-left: 35%;
+    margin-top: 200px;
+    margin-left: 350px;
 }
 
 input[type=button] {
