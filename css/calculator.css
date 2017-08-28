@@ -31,12 +31,12 @@ input[type=button] {
 input[type=text] {
     position: relative;
     display: block;
-    width: 30%;
+    width: 90%;
     margin: 5px auto;
     font-size: 30px;
     border: 2px solid black;
-    float: right;
-    padding-left: 10px;
+    /*float: right;*/
+    /*padding-left: 10px;*/
 
 
 
