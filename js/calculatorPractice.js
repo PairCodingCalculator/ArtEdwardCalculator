@@ -22,7 +22,7 @@ for (var i = 0; i < numberBtns.length; i++) {
                 oldNumber = "";
             }
             var newValue = oldNumber + this.getAttribute("value");
-            // console.log(newValue);
+            console.log(newValue);
             leftDisplay.setAttribute("value", newValue);
             console.log(numberBtns);
 
@@ -76,9 +76,9 @@ equals.addEventListener("click", function () {
 });
 
 var clearAll = function() {
-        leftDisplay.value = "";
-        middleDisplay.value = "";
-        rightDisplay.value = "";
+        leftDisplay.setAttribute("value", "");
+        middleDisplay.setAttribute("value", "");
+        rightDisplay.setAttribute("value", "");
 
 }
     clear.addEventListener("click", clearAll, false);
