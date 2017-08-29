@@ -3,12 +3,10 @@
 <head>
     <link rel="stylesheet" href="css/calculatorPractice.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Calculator Practice</title>
 </head>
 <body>
-<!--<script language="JavaScript">-->
-<!--var num= Math.sqrt();-->
-<!--</script>-->
+
 <div id="calculator-container">
     <form class="+,-,/,*" name="calculator">
 
@@ -23,37 +21,36 @@
         <br>
 
 
-        <input type="button" class="button" value="7" onclick="calculator.answer.value += '7'">
-        <input type="button" class="button" value="8" onclick="calculator.answer.value += '8'">
-        <input type="button" class="button" value="9" onclick="calculator.answer.value += '9'">
-        <input type="button" class="button" value="+" onclick="calculator.answer.value += '+'">
+        <input type="button" class="button btn number" value="7">
+        <input type="button" class="button btn number" value="8">
+        <input type="button" class="button btn number" value="9">
+        <input type="button" class="button btn operator" value="+">
         <br>
 
-        <input type="button" class="button" value="4" onclick="calculator.answer.value += '4'">
-        <input type="button" class="button" value="5" onclick="calculator.answer.value += '5'">
-        <input type="button" class="button" value="6" onclick="calculator.answer.value += '6'">
-        <input type="button" class="button" value="*" onclick="calculator.answer.value += '*'">
+        <input type="button" class="button btn number" value="4">
+        <input type="button" class="button btn number" value="5">
+        <input type="button" class="button btn number" value="6">
+        <input type="button" class="button btn operator" value="*">
         <br>
 
-        <input type="button" class="button" value="1" onclick="calculator.answer.value += '1'">
-        <input type="button" class="button" value="2" onclick="calculator.answer.value += '2'">
-        <input type="button" class="button" value="3" onclick="calculator.answer.value += '3'">
-        <input type="button" class="button" value="-" onclick="calculator.answer.value += '-'">
+        <input type="button" class="button btn number" value="1">
+        <input type="button" class="button btn number" value="2">
+        <input type="button" class="button btn number" value="3">
+        <input type="button" class="button btn operator" value="-">
         <br>
 
-        <input type="button" class="button" value="0" onclick="calculator.answer.value += '0'">
-        <input type="button" class="button" value="." onclick="calculator.answer.value += '.'">
-        <input type="button" class="button" value="=" onclick="calculator.answer.value = eval(calculator.answer.value)">
-        <input type="button" class="button" value="/" onclick="calculator.answer.value += '/'">
+        <input type="button" class="button btn number" value="0">
+        <input type="button" class="button btn number" value=".">
+        <input type="button" class="button btn" id="equals" value="=">
+        <input type="button" class="button button operator" value="/">
         <br>
 
-        <input id="dblbutton" type="button"  class="button" value="c" onclick="calculator.answer.value = ''">
-        <input type="button" class="button" value="√"  onclick="calculator.answer.value = 'Doesnt Work'">
+        <input id="dblbutton" type="button"  class="button" value="clear">
 
 
     </form>
 </div>
 
-<script src="js/calculator.js"></script>
+<script src="js/calculatorPractice.js"></script>
 </body>
 </html>

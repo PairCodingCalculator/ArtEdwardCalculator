@@ -43,14 +43,23 @@ input[type=text] {
 }
 
 #dblbutton {
-    width: 45%;
+    width: 80%;
     padding: 1px;
+    margin-left: 50px;
 
 
 }
 .button:hover {
     background: #E0B612;
-    transform: rotate(5deg);
+    transform: rotate(3deg);
+}
+
+.btn-operator {
+
+}
+
+.btn-number {
+
 }
 
 
