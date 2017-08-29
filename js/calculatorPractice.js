@@ -3,7 +3,7 @@
 
 var numberBtns = document.getElementsByClassName("number");
 var operatorBtns = document.getElementsByClassName("operator");
-var clear = document.getElementById("clear");
+var clear = document.getElementById("dblbutton");
 var equals = document.getElementById("equals");
 
 var leftDisplay = document.getElementById("right");
@@ -17,25 +17,26 @@ for (var i = 0; i < numberBtns.length; i++) {
         console.log("middle display" + middleDisplay.value);
 
         if (rightDisplay.value === "" && middleDisplay.value === "") {
-            // exactly the same but with rightDisplay;
             var oldNumber = leftDisplay.getAttribute("value");
-            if (oldNumber == null) {
+            if (oldNumber === null) {
                 oldNumber = "";
             }
             var newValue = oldNumber + this.getAttribute("value");
-            console.log(newValue);
+            // console.log(newValue);
             leftDisplay.setAttribute("value", newValue);
             console.log(numberBtns);
 
         } else if (leftDisplay.value !== "" && middleDisplay.value !== "") {
             var oldNumber = rightDisplay.getAttribute("value");
-            if (oldNumber == null) {
+            if (oldNumber === null) {
                 oldNumber = "";
             }
             var newValue = oldNumber + this.getAttribute("value");
             console.log(newValue);
             rightDisplay.setAttribute("value", newValue);
             console.log(numberBtns);
+        } else {
+            console.log("its broken");
         }
     });
 }
@@ -62,26 +63,43 @@ equals.addEventListener("click", function () {
         case "/":
             total = leftValue / rightValue;
             break;
-        case "X":
+        case "*":
             total = leftValue * rightValue;
             break;
+
     }
+
     console.log(total);
     leftDisplay.setAttribute("value", total);
     rightDisplay.setAttribute("value","");
     middleDisplay.setAttribute("value","");
 });
-function clear() {
 
-    clear.addEventListener("c", function () {
-        var leftValue = "";
-        var operator = "";
-        var rightValue = "";
-        console.log(clear);
-        leftValue.setAttribute("value", "");
-        rightValue.setAttribute("value", "");
-        operator.setAttribute("value", "");
-    })}
+var clearAll = function() {
+        leftDisplay.value = "";
+        middleDisplay.value = "";
+        rightDisplay.value = "";
 
+}
+    clear.addEventListener("click", clearAll, false);
+//
+//
+//         // middleDisplay.innerHTML = "";
+//         // rightDisplay.innerHTML = "";
+//         // var leftValue = "";
+//         // var operator = "";
+//         // var rightValue = "";
+//         leftDisplay.innerHTML = "";
+//         rightDisplay.innerHTML = "";
+//         operator.setAttribute("value", "");
+//         console.log('hello');
+//     })}
+
+
+// var clear = document.getElementById("dblbutton");
+//
+// document.querySelector("#dblbutton").addEventListener("click", function(){
+//     leftDisplay.innerHTML = "";
+//         rightDisplay.innerHTML = "";}, false);
 
 
